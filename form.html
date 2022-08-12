@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-md-12" style="background: rgba(255, 255, 255, 0.1 )!important; box-shadow: 0px 5px 21px -1px rgba(0, 0, 0, 0.14) !important;">
+        <div class="contact-wrap w-100 p-md-5 p-4">
+            <h3 class="mb-4">Leave us your queries here</h3>
+            <h5 class="mb" style="color:grey; font-size: 16px;">We'll get back to you as soon as possible</h5>
+            <div id="form-message-warning" class="mb-4"></div> 
+                <div id="form-message-success" class="mb-4">
+                </div>
+            <form method="POST" class="contactForm" id="contactForm" name="contactForm" class="gform" action="https://formsubmit.co/nikitap1720@gmail.com" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="label" for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                            <div class="valid-feedback">Done Right! ✅</div>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="form-group">
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            <div class="valid-feedback">Done Right! ✅</div>
+                            <div class="invalid-feedback">Please enter a valid mail ID</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="This Message is specific to" required>
+                            <div class="valid-feedback">Done Right! ✅</div>
+                            <div class="invalid-feedback">Please add a subject</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                    <input type="hidden" name="_subject" value="New Query!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Hey There!  Thank you for your mail, We will surely get in touch with you as soon as possible.  Stay tuned!  Regards, Team Infinite Green">
+                    <input type="hidden" name="_template" value="box"> 
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn form-submit">
+                        <div class="submitting"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
